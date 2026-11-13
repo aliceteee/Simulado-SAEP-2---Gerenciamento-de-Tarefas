@@ -259,7 +259,7 @@ Permite atualizar o status, editar e excluir tarefas.
 A avaliação prática contempla seis entregáveis:
 
 - [x] Diagrama Entidade-Relacionamento (DER).
-- [ ] Exportação SQL do banco de dados.
+- [x] Exportação SQL do banco de dados.
 - [x] Diagrama de Casos de Uso.
 - [x] Página de Cadastro de Usuários.
 - [x] Página de Cadastro de Tarefas.
@@ -281,8 +281,6 @@ A solução tem como finalidade facilitar a organização, a distribuição e o 
 ### ⋆ ˚｡⋆୨୧˚ ⋆｡˚ ⋆
 
 **Desenvolvido com carinho por Alice 𖹭**
-
-♡ ୨୧ ♡
 
 **SENAI · Desenvolvimento de Sistemas · 2026**
 
