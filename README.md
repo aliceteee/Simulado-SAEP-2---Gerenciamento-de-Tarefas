@@ -3,8 +3,6 @@
 
 # ୨୧ Gerenciamento de Tarefas ୨୧
 
-### ♡ Organização, praticidade e um toque de carinho ♡
-
 Sistema web desenvolvido para o gerenciamento de tarefas de uma indústria alimentícia.
 
 **SENAI | Técnico em Desenvolvimento de Sistemas | SAEP**
