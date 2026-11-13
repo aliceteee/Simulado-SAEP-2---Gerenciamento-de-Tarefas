@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Gerenciamento de Tarefas | Quadro de tarefas</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body data-page="gerenciar">
+    <header class="header">
+        <div class="header-inner">
+
+            <a class="brand" href="index.html">
+                <span>
+                    <strong>Gerenciamento de Tarefas</strong>
+                </span>
+            </a>
+
+            <nav aria-label="Menu principal">
+                <a href="index.html">Cadastro de usuários</a>
+                <a href="tarefas.html">Cadastro de tarefas</a>
+                <a class="active" href="gerenciar.html">Gerenciar tarefas</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="shell wide">
+
+        <div class="topline">
+            <div>
+                <div class="eyebrow">ACOMPANHAMENTO DE TAREFAS</div>
+
+                <h1>Gerenciar <em>tarefas</em></h1>
+
+                <p class="intro">
+                    Acompanhe cada atividade, do primeiro passo à conclusão.
+                </p>
+            </div>
+
+            <a class="btn primary new-task" href="tarefas.html">
+                + Nova tarefa
+            </a>
+        </div>
+
+        <div id="mensagem" class="message" role="status" aria-live="polite">
+        </div>
+
+        <div class="kanban">
+
+            <section class="lane lane-todo">
+                <div class="lane-title">
+                    <span class="lane-symbol">○</span>
+                    <h2>A fazer</h2>
+                    <span class="count" id="count-A_FAZER">0</span>
+                </div>
+
+                <div class="lane-cards" id="lane-A_FAZER"></div>
+            </section>
+
+            <section class="lane lane-doing">
+                <div class="lane-title">
+                    <span class="lane-symbol">◔</span>
+                    <h2>Fazendo</h2>
+                    <span class="count" id="count-FAZENDO">0</span>
+                </div>
+
+                <div class="lane-cards" id="lane-FAZENDO"></div>
+            </section>
+
+            <section class="lane lane-done">
+                <div class="lane-title">
+                    <span class="lane-symbol">✳</span>
+                    <h2>Pronto</h2>
+                    <span class="count" id="count-PRONTO">0</span>
+                </div>
+
+                <div class="lane-cards" id="lane-PRONTO"></div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        feito com carinho por Alice 𖹭
+    </footer>
+
+</body>
+
+</html>

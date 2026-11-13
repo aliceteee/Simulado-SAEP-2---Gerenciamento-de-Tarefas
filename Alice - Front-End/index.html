@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Gerenciamento de Tarefas | Cadastro de usuários</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body data-page="usuarios">
+    <header class="header">
+        <div class="header-inner">
+
+            <a class="brand" href="index.html">
+                <span>
+                    <strong>Gerenciamento de Tarefas</strong>
+                </span>
+            </a>
+
+            <nav aria-label="Menu principal">
+                <a class="active" href="index.html">Cadastro de usuários</a>
+                <a href="tarefas.html">Cadastro de tarefas</a>
+                <a href="gerenciar.html">Gerenciar tarefas</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="shell">
+
+        <div class="eyebrow">SISTEMA DE ORGANIZAÇÃO</div>
+
+        <h1>Cadastro de <em>usuários</em></h1>
+
+        <p class="intro">
+            Comece por aqui: cadastre as pessoas que poderão receber tarefas.
+        </p>
+
+        <div class="single-col">
+            <section class="panel">
+                <div class="panel-head">
+                    <div class="panel-icon">◎</div>
+
+                    <div>
+                        <h2>Novo usuário</h2>
+                        <p>Preencha os dados para continuar.</p>
+                    </div>
+                </div>
+
+                <form id="form-usuario">
+
+                    <label for="nome">
+                        Nome completo <span>*</span>
+                    </label>
+
+                    <input id="nome" name="nome" required maxlength="120" placeholder="Ex.: Maria Silva"
+                        autocomplete="name">
+
+                    <label for="email">
+                        E-mail <span>*</span>
+                    </label>
+
+                    <input id="email" name="email" type="email" required maxlength="180"
+                        placeholder="Ex.: maria@email.com" autocomplete="email">
+
+                    <button class="btn primary" type="submit">
+                        Cadastrar usuário <span>↗</span>
+                    </button>
+
+                    <div id="mensagem" class="message" role="status" aria-live="polite">
+                    </div>
+
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        feito com carinho por Alice 𖹭
+    </footer>
+
+</body>
+</html>

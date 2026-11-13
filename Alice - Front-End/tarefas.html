@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Gerenciamento de Tarefas | Cadastro de tarefas</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body data-page="tarefas">
+
+    <header class="header">
+        <div class="header-inner">
+
+            <a class="brand" href="index.html">
+                <span>
+                    <strong>Gerenciamento de Tarefas</strong>
+                </span>
+            </a>
+
+            <nav aria-label="Menu principal">
+                <a href="index.html">Cadastro de usuários</a>
+                <a class="active" href="tarefas.html">Cadastro de tarefas</a>
+                <a href="gerenciar.html">Gerenciar tarefas</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="shell">
+
+        <div class="eyebrow">CONTROLE DE ATIVIDADES</div>
+
+        <h1 id="titulo-tarefa">
+            Cadastro de <em>tarefas</em>
+        </h1>
+
+        <p class="intro" id="subtitulo-tarefa">
+            Cadastre e organize as atividades da equipe.
+        </p>
+
+        <div class="two-col">
+            <section class="panel">
+                <div class="panel-head">
+                    <div class="panel-icon">✎</div>
+
+                    <div>
+                        <h2 id="titulo-form">Nova tarefa</h2>
+                        <p>Defina os detalhes e quem ficará responsável.</p>
+                    </div>
+                </div>
+
+                <form id="form-tarefa">
+
+                    <label for="descricao">
+                        Descrição <span>*</span>
+                    </label>
+
+                    <textarea id="descricao" name="descricao" required maxlength="600" rows="3"
+                        placeholder="Ex.: Organizar o estoque de alimentos"></textarea>
+
+                    <label for="setor">
+                        Setor <span>*</span>
+                    </label>
+
+                    <input id="setor" name="setor" required maxlength="120" placeholder="Ex.: Estoque">
+
+                    <div class="form-grid">
+
+                        <div>
+                            <label for="usuarioId">
+                                Usuário responsável <span>*</span>
+                            </label>
+
+                            <select id="usuarioId" name="usuarioId" required>
+                                <option value="">
+                                    Carregando usuários...
+                                </option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="prioridade">
+                                Prioridade <span>*</span>
+                            </label>
+
+                            <select id="prioridade" name="prioridade" required>
+                                <option value="">Selecione</option>
+                                <option value="BAIXA">Baixa</option>
+                                <option value="MEDIA">Média</option>
+                                <option value="ALTA">Alta</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div id="edit-status-wrap" hidden>
+
+                        <label for="status">Status</label>
+
+                        <select id="status">
+                            <option value="A_FAZER">A fazer</option>
+                            <option value="FAZENDO">Fazendo</option>
+                            <option value="PRONTO">Pronto</option>
+                        </select>
+
+                    </div>
+
+                    <button class="btn primary" type="submit" id="salvar-tarefa">
+                        Cadastrar tarefa <span>↗</span>
+                    </button>
+
+                    <div id="mensagem" class="message" role="status" aria-live="polite"></div>
+
+                </form>
+            </section>
+
+            <aside class="side-note">
+
+                <h3>Tudo em seu lugar.</h3>
+
+                <p>
+                    Defina responsáveis e prioridades e acompanhe
+                    o andamento no quadro.
+                </p>
+
+                <div class="note-line"></div>
+
+                <a class="text-link" href="gerenciar.html">
+                    Ver quadro de tarefas →
+                </a>
+
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        feito com carinho por Alice 𖹭
+    </footer>
+
+</body>
+</html>
